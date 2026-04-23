@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Northstar CRM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">N</div>
+          <div>
+            <strong>Northstar CRM</strong>
+            <span>Early-stage fund OS</span>
+          </div>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-item active" data-view="dashboard">Dashboard</button>
+          <button class="nav-item" data-view="board">Pipeline Board</button>
+          <button class="nav-item" data-view="table">Pipeline Table</button>
+          <button class="nav-item" data-view="company">Company Detail</button>
+          <button class="nav-item" data-view="founder">Founder / Contact</button>
+          <button class="nav-item" data-view="activity">Team Activity</button>
+          <button class="nav-item" data-view="analytics">Analytics</button>
+          <button class="nav-item" data-view="tasks">Tasks</button>
+          <button class="nav-item" data-view="portfolio">Portfolio</button>
+          <button class="nav-item" data-view="spec">PRD + Schema</button>
+        </nav>
+        <div class="sidebar-footer">
+          <button id="themeToggle" class="icon-button" aria-label="Toggle dark mode">D</button>
+          <div>
+            <strong>Fund I</strong>
+            <span>Seed / Pre-seed</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Investment team workspace</p>
+            <h1 id="viewTitle">Executive Dashboard</h1>
+          </div>
+          <div class="command">
+            <input id="searchInput" type="search" placeholder="Search companies, founders, notes, sectors..." />
+            <button class="primary-button">Log interaction</button>
+          </div>
+        </header>
+
+        <section id="dashboard" class="view active-view"></section>
+        <section id="board" class="view"></section>
+        <section id="table" class="view"></section>
+        <section id="company" class="view"></section>
+        <section id="founder" class="view"></section>
+        <section id="activity" class="view"></section>
+        <section id="analytics" class="view"></section>
+        <section id="tasks" class="view"></section>
+        <section id="portfolio" class="view"></section>
+        <section id="spec" class="view"></section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
